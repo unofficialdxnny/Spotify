@@ -1,25 +1,3 @@
 {
-    "settings": {
-        "Threads": 3,
-        "Create_Username": "y",
-        "Use_Proxy": "n",
-        "Change_Avatar": "yn",
-        "Debug_Mode": "if you are not a developer, do not touch this value!! (if you're going to change you can just do 'y')"
-    },
-
-    "follow_ids": {
-        "Account_IDs": ["ahmeddanial", "account id2", "account id 3 (u can put as many as you want)"],
-        "Playlist_IDs": ["35DIHSa0QoEsc64WVRpvdB", "playlist id2 (u can put as many as you want)"],
-        "Artist_IDs": ["artist id1", "artist id (u can put as many as you want)"]
-    },
-
-    "follow_types": {
-        "Profile": "y",
-        "Playlist": "y",
-        "Artist": "n"
-    },
-
-    "save_methods": {
-        "Text_File": "y"
-    }
+    "playlist_url" : "https://open.spotify.com/playlist/35DIHSa0QoEsc64WVRpvdB?si=e991005983b54da3"
 }
