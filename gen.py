@@ -57,7 +57,7 @@ def generate():
     global errors
     while True:
         nick =  fake.first_name()+ "1337"
-        passw = 'BitzLol123'
+        passw = config['password']
         email = nick+"@"+text(5)+".com"
         headers={"Accept-Encoding": "gzip",
              "Accept-Language": "en-US",
@@ -88,7 +88,7 @@ def generate():
                 print(r.text)
                 print(Fore.BLUE + email+":"+passw+Fore.RESET)
                 file = open('accounts.txt','a')
-                file.write(email+'\n')
+                file.write(email+':'+passw+'\n')
                 file.close()
                 success += 1
                 os.system('title Spotify Gen - Success: '+str(success)+ ' Error: '+str(errors))
