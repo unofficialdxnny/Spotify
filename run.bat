@@ -1,5 +1,1 @@
-pip install selenium
-pip install pystyle
-
-
-python main.py
+python Head.py
