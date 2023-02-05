@@ -67,8 +67,9 @@ while True:
             sleep(5)
 
             driver.get(f'https://open.spotify.com/playlist/{data["playlist_url_code"]}')
-            sleep(5)    
-            driver.find_element(By.XPATH, '/html/body/div[4]/div/div[2]/div[3]/div[1]/div[2]/div[2]/div/div/div[2]/main/div/section/div[2]/div[2]/div[4]/div/div/div/div/button[1]').click() ## like playlist   
+            sleep(4)    
+            driver.find_element(By.XPATH, '/html/body/div[4]/div/div[2]/div[3]/div[1]/div[2]/div[2]/div/div/div[2]/main/div/section/div[2]/div[2]/div[4]/div/div/div/div/button[1]').click() ## like playlist 
+            sleep(5)  
             driver.get(f'https://open.spotify.com/user/{data["username_to_follow"]}')
             sleep(5)
             driver.find_element(By.XPATH, '/html/body/div[4]/div/div[2]/div[3]/div[1]/div[2]/div[2]/div/div/div[2]/main/section/div/div[3]/div[4]/div/div/div/div/button[1]').click() ## follow user
@@ -81,8 +82,11 @@ while True:
     
             sleep(5)
             driver.get("https://accounts.spotify.com/en/login?continue=https%3A%2F%2Fopen.spotify.com%2F")
-            sleep(5)
-    
+            sleep(4)
+            driver.find_element(By.XPATH, '/html/body/div[1]/div/div[2]/div/div/div[1]/div[1]/input').clear()
+            sleep(4)
+            
+
 ## while True:
 ##     Login()
 ##     interact()
